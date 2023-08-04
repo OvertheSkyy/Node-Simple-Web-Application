@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Not signed-in</title>
+</head>
+<body>
+  <h1>Welcome!</h1>
+  <div class="mb-2" >
+  <button type="submit" id="sign-in"><a href="/sign-in">Sign-in</a></button> 
+  <button type="submit" id="sign-up"><a href="/sign-up">Sign-up</a></button>
+  </div>
+  <div>
+    <h1 class="mb-4">Places to Enjoy!</h1>
+
+      <div class="card mt-4">
+        <div class="card-body">
+          <h4 class="card-title"><a href="/!signed-in-show1" class="btn btn-primary"><%= place1.name%></a></h4>
+          <div class="card-subtitle text-muted mb-2">
+            <%= place1.uploader %>
+          </div>
+          <div class="card-text mb-2"><%= place1.description %></div>
+          <div class="card-text mb-2"><%= place1.address %></div>
+        </div>
+      </div>
+
+      <div class="card mt-4">
+        <div class="card-body">
+          <h4 class="card-title"><a href="/!signed-in-show2" class="btn btn-primary"><%= place2.name%></a></h4>
+          <div class="card-subtitle text-muted mb-2">
+            <%= place2.uploader %>
+          </div>
+          <div class="card-text mb-2"><%= place2.description %></div>
+          <div class="card-text mb-2"><%= place2.address %></div>
+        </div>
+      </div>
+
+      <div class="card mt-4">
+        <div class="card-body">
+          <h4 class="card-title"><a href="/!signed-in-show3" class="btn btn-primary"><%= place3.name%></a></h4>
+          <div class="card-subtitle text-muted mb-2">
+            <%= place3.uploader %>
+          </div>
+          <div class="card-text mb-2"><%= place3.description %></div>
+          <div class="card-text mb-2"><%= place3.address %></div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

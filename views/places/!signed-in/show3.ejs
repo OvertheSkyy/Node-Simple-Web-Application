@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Place3</title>
+</head>
+<body>
+  <div>
+    <h1 class="mb-1"><%= place3.name%></h1>
+    <div class="card-subtitle text-muted mb-2">
+      <%= place3.uploader %>
+      </div>
+    <div class="card-text mb-2"><%= place3.description %></div>
+    <div class="card-text mb-2"><%= place3.address %></div>
+    <div class="card-text mb-2">August 14, 2022</div>
+    <iframe
+    width="600"
+    height="450"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0VOQSWXuxL8Eg-Nnf0hEkS37P43Wsu4Q
+      &q=Space+Needle,Seattle+WA">
+    </iframe>
+  </div>
+  <a href="/" class="btn btn-primary">Back</a>
+</body>
+</html>
